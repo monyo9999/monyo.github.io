@@ -1,0 +1,78 @@
+body,h1,h2,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(55, 170, 170);
+}
+p{
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+header{
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightsalmon;
+}
+
+.closeButton{
+    color: lightslategrey;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.burgerIcon{
+    position: absolute;
+    top: 30px;
+    right: 36px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.burgerLine{
+    width:60px;
+    height: 5px;
+    background-color: lightslategrey;
+    margin-bottom: 10px;
+}
+ .navMenu{
+     flex-flow: column wrap;
+ }
+
+ .navMenu li{
+     list-style: none;
+ }
+
+ .navMenu li a{
+    color: lightslategrey;
+    text-decoration: none;
+    font-size: 55px;
+    display: inline-block;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightgreen;
+    transition: 0.2s ease all;
+ }
+
+.navMenu li:last-child a{
+    border-bottom: none; /*utolsó elem ne legyen aláhúzva.*/
+}
+
+.navMenu li:hover a{
+    background-color: #c0b447; /*ha ráhúzzuk az egeret megváltozik a szyne.*/
+}
